@@ -1,4 +1,4 @@
-function buttonClickHandler(e) {
+function buttonClickHandlerBodyPart(e) {
     //check for last active element and hide it
     if(document.getElementsByClassName("symptom-description"+' active-description')[0]){
       document.getElementsByClassName("symptom-description"+' active-description')[0].setAttribute("hidden","");
@@ -24,7 +24,7 @@ function buttonClickHandler(e) {
     //match icon className with button id
     let iconString= e.target.className.replace("active-icon","").trim()
     var buttonToMatch= document.getElementById(iconString.slice(9,));
-    buttonClickHandler(buttonToMatch);
+    buttonClickHandlerBodyPart(buttonToMatch);
   }
 
   function symptomClickHandler(e) {
