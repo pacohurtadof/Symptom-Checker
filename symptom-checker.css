@@ -1,0 +1,382 @@
+.symptom-checker-container{
+    display:flex;
+    max-width:980px;
+    height:395px;
+  }
+
+.buttons{
+    /*background-color: #ffffff;*/
+    min-width: 33.333%;
+    max-height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.buttons-list{
+    list-style-type: none;
+    height: 100%;
+    padding-right: 35px;
+    
+}
+
+.symptoms-box{
+    position: relative;
+    background-color: #f3f4f8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-width: 33.33%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.symptoms-title, .symptoms-title:hover{
+    color: #003b71 !important;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    cursor:text !important;
+}
+
+.button {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9375em;
+    margin: 4px 2px;
+    cursor: pointer;
+    max-width: 80%;
+    width: 70%;
+    max-height: 20%;
+    position: relative;
+    line-height: 10px;
+    color: #003b71 ;
+    font-weight:bold;
+    border-bottom: 1.5px dotted #51565e79;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0px 2px 5px #8888888a;
+
+  }
+
+
+  .active-bodyPart-button{
+    background-color: #003b71; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9375em;
+    margin: 4px 2px;
+    cursor: pointer;
+    max-width: 80%;
+    width: 70%;
+    max-height: 20%;
+    position: relative;
+    line-height: 10px;
+    font-weight:bold;
+    border-bottom: 1.5px dotted #51565e79;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .button:hover {
+    background-color: #003a718c; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9375em;
+    margin: 4px 2px;
+    cursor: pointer;
+    max-width: 80%;
+    width: 70%;
+    max-height: 20%;
+    position: relative;
+    line-height: 10px;
+    font-weight:bold;
+    border-bottom: 1.5px dotted #51565e79;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+
+  .read-more-button {
+    background-color: #003b71; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8375em;
+    margin: 4px 2px;
+    cursor: pointer;
+    max-width: 80%;
+    width: 60%;
+    max-height: 40%;
+    position: relative;
+    font-weight:bold;
+
+  }
+
+  .read-more-button:hover {
+    background-color: #f7f7f7; 
+    border-color: #003b71;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: thin;
+    color: #003b71;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8375em;
+    margin: 4px 2px;
+    cursor: pointer;
+    max-width: 80%;
+    width: 60%;
+    max-height: 40%;
+    position: relative;
+    font-weight:bold;
+    
+  }
+
+  .close-description{
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      font-size: 1.4em;
+      cursor: pointer;
+  }
+
+  .list-of-symptoms{
+      list-style-type: none;
+      padding-right: 40px;
+      padding-right: 40px;
+      text-align: left;
+      margin: 0px;
+      position: absolute;
+      max-height: 370px; /*quitar*/
+      max-width: 233px;
+      overflow-y: scroll;
+      opacity: 0%;
+      z-index: -1;
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .list-of-symptoms li{
+      margin-top: 15px;
+      margin-right: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px dotted #bdc6d3;
+      font-family: 'Open Sans', sans-serif;
+      font-size: .9375em;
+      cursor: pointer;
+    }
+  
+    .list-of-symptoms li:hover{
+      color: #438aca;
+    }
+
+    .active-condition{
+        animation: fade-out 0.5s forwards ease-in-out; 
+        z-index: 1;
+    }
+
+    .active-condition-li{
+      color: #438aca;
+    }
+
+    .simulator{
+        display: flex;
+        
+    }
+  
+  #symptom-area {
+      color: #9edae6;
+      display: block;
+      font-size: 4.0625em;
+      height: 44px;
+      left: 0;
+      position: relative;
+      top: 0;
+      width: 44px;
+      -moz-transition: left .3s ease-in-out,top .3s ease-in-out;
+      -o-transition: left .3s ease-in-out,top .3s ease-in-out;
+      -webkit-transition: left .3s ease-in-out,top .3s ease-in-out;
+      transition: left .3s ease-in-out,top .3s ease-in-out;
+  }
+
+  .symptom-description{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #bdc6d3;
+    border-radius: 5px;
+    z-index: 2; /*2 */
+    
+  }
+
+  .description {
+    position: relative;
+    padding-top: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    padding: 50px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.description-title{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: #003b71 ;
+    font-weight: bold;
+    font-size: .98em;
+}
+  
+  #symptoms-model {
+      background: url(https://www.kayalortho.com/wp-content/themes/kayaltheme/img/symptoms-model-bg.gif) no-repeat center center #003b71;
+      border-radius: 5px;
+      height: 395px;
+      left: 50%;
+      top: 0;
+      width: 33.3333%;
+  }
+
+  .bodyIcon {
+    height: 3%;
+    width: 4%;
+    border-radius: 50%;
+    background-color: #9edae6;
+    background-clip: content-box;
+    box-shadow:
+    0 0 0 4px #d2f2f9, 
+    0 0 0 7px #f1f7f93d;
+    transition: border-color 200ms ease-in, background-color 200ms ease-in;
+    animation-name: fade-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .bodyIcon.backOption{
+    left: 48%;
+    top: 25%;
+  }
+
+  .bodyIcon.elbowOption{
+    left:63%;
+    top:33%;
+  }
+
+  .bodyIcon.footAndAnkleOption{
+    left:41%;
+    top:81%;
+  }
+
+  .bodyIcon.handAndWristOption{
+    left:30%;
+    top:39%;
+  }
+
+  .bodyIcon.HipOption{
+    left:54%;
+    top:35%;
+  }
+
+  .bodyIcon.kneeOption{
+    left:55%;
+    top:55%;
+  }
+
+  .bodyIcon.neckOption{
+    left:48%;
+    top:-3%;
+  }
+
+  .bodyIcon.shoulderOption{
+    left:37%;
+    top:-3%;
+  }
+
+  .active-icon{
+    background-color: #003b71c7;
+  }
+ 
+  .icon-trigger-points{
+    width: 100%;
+    height: 100%;
+  }
+  
+  @keyframes fade-out {
+    50% {opacity: 60%;}
+    100% {opacity: 100%;}
+  }
+
+  @keyframes activate-symptom {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+ 
+
+  @media screen and (max-width: 992px) {
+    .symptom-checker-container {
+      display: block;
+      max-width: auto;
+      height: 100%;
+      overflow: hidden;
+    }
+    .buttons{
+      display: none;
+    }
+    #symptoms-model{
+      min-height: 50%;
+      width: 100%;
+
+    }
+    .symptoms-box{
+     /* margin-left:200px;
+      margin-right: 200px;
+      margin-bottom:200px;*/
+      justify-content:flex-start;
+      align-items: center;
+      position: relative;
+      min-height: 100%;
+    }
+
+    .list-of-symptoms{
+      max-width: 500px;
+      min-height: 100%;
+
+    }
+
+    .list-of-symptoms li{
+      font-size: 5vw;
+    }
+
+    .description{
+      font-size: 5vh;
+      line-height: normal;
+    }
+
+    
+  }

@@ -1,0 +1,1135 @@
+
+<html lang="en">
+    <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="symptom-checker.css">
+      <meta charset="utf-8">
+    
+      <title>Symptom checker</title>
+      <meta name="description" content="Symptom checker">
+      <meta name="author" content="SitePoint">
+     
+      
+      <div class="symptom-checker-container">
+        <div class="buttons">
+          <ul class="buttons-list">
+            <li>
+              <span onclick="buttonClickHandler(event.target)" id="backOption" class="active-bodyPart-button">Back</button>
+            </li>
+            <li>
+              <span onclick="buttonClickHandler(event.target)" id="elbowOption" class="button">Elbow</button>
+            </li>
+            <li>
+              <span onclick="buttonClickHandler(event.target)" id="footAndAnkleOption" class="button">Foot and Ankle</button>
+            </li>
+            <li>
+              <span onclick="buttonClickHandler(event.target)" id="handAndWristOption" class="button">Hand and Wrist</button>
+            </li>
+            <li>
+              <span onclick="buttonClickHandler(event.target)" id="HipOption" class="button">Hip</button>
+            </li>
+            <li>
+              <span onclick="buttonClickHandler(event.target)" id="kneeOption" class="button">Knee</button>
+            </li>
+            <li>
+              <span onclick="buttonClickHandler(event.target)" id="neckOption" class="button">Neck</button>
+            </li>
+            <li>
+              <span onclick="buttonClickHandler(event.target)" id="shoulderOption" class="button">Shoulder</button>  
+            </li>
+            
+          </ul>    
+        </div>
+        <div id="symptoms-model" class="simulator">
+            <div class="icon-trigger-points" id="">
+              <div onclick="iconClickHandler(event)" class="bodyIcon backOption active-icon"></div>
+              <div onclick="iconClickHandler(event)" class="bodyIcon elbowOption"></div>
+              <div onclick="iconClickHandler(event)" class="bodyIcon footAndAnkleOption"></div>
+              <div onclick="iconClickHandler(event)" class="bodyIcon handAndWristOption"></div>
+              <div onclick="iconClickHandler(event)" class="bodyIcon HipOption"></div>
+              <div onclick="iconClickHandler(event)" class="bodyIcon kneeOption"></div>
+              <div onclick="iconClickHandler(event)" class="bodyIcon neckOption"></div>
+              <div onclick="iconClickHandler(event)" class="bodyIcon shoulderOption"></div>
+            </div>
+            <div class="symptom-description backPainOption" hidden>
+              <div class="description" >
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">BACK PAIN</span>
+                <p class="">
+                  Our Back Pain Doctors Expedite Healing Heal Lower Back Pain With Our Specialized Treatments Back pain is exceedingly common and often the reason people go to see a doctor. It’s also the leading cause 
+                  of job-related disability and missed work days worldwide. Most people (around 80 percent) will experience some form of back pain during […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description brokenBonesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">BROKEN BONES</span>
+                <p class="">
+                  Don’t Let Pain Slow You Down Bones are rigid, but they do bend or “give” somewhat when an outside force is applied. However, if the force is too great, the bones will break—just as a plastic ruler breaks when it is bent too far. The severity of a fracture usually depends on the force that […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description bulgingDiscsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">BULGING DISCS</span>
+                <p class="">
+                  Treat Bulging Discs and Alleviate Pain Bulging discs are a normal spine condition experienced by most people. The spine contains 33 bones, or vertebrae, with a doughnut-shaped disc, cushioned between many of them. As the surrounding bones push into the discs, they flex and naturally bulge, allowing for movement and flexibility in the spine. Most […]  
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description coccydyniaOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">COCCYDYNIA</span>
+                <p class="">
+                  Alleviate Tailbone Pain With Long-Term Spinal Health Solutions Coccydynia (tailbone pain) is a condition that occurs when the tailbone is damaged or strained. Coccyx is the medical term for the tailbone. It’s the triangle-shaped bone at the very bottom of your spine. Even a small bruise on the tailbone can cause significant discomfort and pain. […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description compressionFracturesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">COMPRESSION FRACTURES</span>
+                <p class="">
+                  Heal Compression Fractures and Improve Spine Strength and Flexibility Compression fractures occur when one of the spinal bones (vertebrae) collapse. Compression fractures are most likely to occur in the middle of the back and can also happen in the neck or lower back. Women are most likely to suffer compression fractures. Approximately one in three […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description discDegenerationOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">DISC DEGENERATION</span>
+                <p class="">
+                  Take Steps Toward Pain Relief The flexible discs between the vertebrae are the part of the spine that allow bending and twisting in healthy individuals. Spinal discs are designed to be shock absorbers between the spinal bones and are constructed to allow flexibility in the back. Through the process of aging, these rubbery discs eventually […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description HerniatedDiscOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">HERNIATED DISC MANAGEMENT</span>
+                <p class="">
+                  We Can Restore Your Long-Term Spine Health Discs are flat, rubbery cushions that maintain spinal flexibility and act as shock absorbers for the spine. A herniated disc (slipped/ruptured disc) is one of the most widespread causes of leg, neck and back pain. Herniated discs occur when pressure from the vertebrae impacts the discs in between. The […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description herniatedDiscsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">HERNIATED DISCS</span>
+                <p class="">
+                  Everything You Need to Know Disks are small, rubbery cushions that act as shock absorbers for the spine, while helping to maintain spinal flexibility. When these disks are damaged, they may crack. This condition is known as a herniated disk, which is sometimes called a slipped or ruptured disk, and can happen at any location […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description injuredMusclesTendonsAndLigamentsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">INJURED MUSCLES, TENDONS AND LIGAMENTS</span>
+                <p class="">
+                  Find Relief from Sprains, Strains, Tears & More Muscles and tendons are the tissues that move joints. The muscles are the “red meat” of the body. When they receive a signal from the brain via the nerves, the muscles contract. This pull is transmitted through the tendon to the bone so that the joint moves. […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description lowerBackPainOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">LOWER BACK PAIN</span>
+                <p class="">
+                  Get Your Back Back Lower back pain is one of the most common medical problems reported by patients. While the severity and cause of back disorders vary, one thing common to most of these disorders is the major impact that lower back problems can have on patients’ lives. Regardless of the cause and severity, our […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description muscleSpasmsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">MUSCLE SPASMS</span>
+                <p class="">
+                  Find Relief for Painful Muscle Cramps One of the body’s natural, protective response mechanisms, a muscle spasm is an involuntary, sustained contraction of the muscle fibers in response to injury or inflammation—either in the muscles themselves or the nerves that serve them. In the back, muscle spasms also may signal injury or damage to an […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description myelopathyOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">MYELOPATHY</span>
+                <p class="">
+                  Personalized Treatment for Compression Pain Cervical spondylotic myelopathy (spinal cord compression) is a condition in the neck that arises when the spinal cord is squeezed. This squeezing (compression) is caused by the regular wear-and-tear through aging that occurs in the spine. Myelopathy is most prevalent in individuals over age 50. While the condition can be […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description neckInjuriesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">NECK INJURIES</span>
+                <p class="">
+                  Get Advanced, Long-Lasting Relief The neck is vulnerable to a wide range of disorders. Herniated discs, degenerative disc disease, fractures and persistent pain—which can also be felt in the back, shoulders and arms—are just a few common neck problems. These conditions have the potential to limit nearly every aspect of a person’s life, causing disabling […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description NeuropathyOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">NEUROPATHY</span>
+                <p class="">
+                  Find Relief & Reduce The Pain Neuropathy is the term used to describe a problem with the nerves, usually the “peripheral nerves” as opposed to the central nervous system (e.g., the brain and spinal cord). Peripheral neuropathy is a common disease caused by nerve deterioration. Neuropathy is seen with a number of different underlying medical […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description occupationalInjuriesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">OCCUPATIONAL INJURIES</span>
+                <p class="">
+                  Don’t Suffer in Silence Generally related to repetitive motion during work-related tasks, occupational injuries are approached differently than injuries resulting from a single incident or accident. Patients suffering from an occupational injury often perform daily tasks that are repetitive and involve the same joints, tendons and muscles in a targeted region—such as computer operators, assembly […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description osteoporosis&BoneDensityOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">OSTEOPOROSIS & BONE DENSITY</span>
+                <p class="">
+                  Break Free from Bone Disease Osteoporosis is the most common bone disease. It involves the thinning of bone tissue and loss of bone density, and it is most common in the spine, hips and wrists. As people age, the amount of bone tissue produced by their bodies begins to slowly decline. The older a person […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description pinchedNerveOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">PINCHED NERVE</span>
+                <p class="">
+                  The Pain Stops Here A pinched nerve can put a serious damper on your life. Pinched nerves, also referred to as cervical radiculopathy, can occur in different parts of the body—from the neck down to the lumbar spine. Fractures, bulging or herniated discs, or diseased spinal disks may compress adjacent nerve roots: impairing the nerve’s […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>    
+            <div class="symptom-description pinchedNervesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">PINCHED NERVES</span>
+                <p class="">
+                  Find Relief From Chronic Nerve Pain A pinched nerve can occur when too much pressure is put on one of your nerves by surrounding tissues such as bones, muscles or tendons. Your nerve can be squeezed, impacting its function and causing pain or numbness. Pinched nerves can occur in various places. Herniated discs in the lower […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description radiculopathyOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">RADICULOPATHY</span>
+                <p class="">
+                  Alleviating Pressure and Preventing Pain Several sensitive nerves in the body branch away from the spinal column through canals before they travel to peripheral areas. These nerves transmit sensory information back and forth from the central nervous system. However, sometimes your nerves stop working properly because they are compressed and damaged as they leave the […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description sacroiliacJointDysfunctionOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SACROILIAC JOINT DYSFUNCTION</span>
+                <p class="">
+                  Ease Chronic Low Back and Hip Joint Pain Sacroiliac joint dysfunction (SI pain) is pain you feel in your lower back and buttocks. The dysfunction arises from any damage to the joint that connects your spine and hip (the sacroiliac joints). These two joints provide support and stability and also work to absorb any impact […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>    
+            <div class="symptom-description scoliosisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SCOLIOSIS</span>
+                <p class="">
+                  Helping to Correct Structural Spine Issues Scoliosis causes a curve in your spine, often in the shape of a C or S. While this curvature can appear at any age, it often appears between the ages of 10 and 12 or in the early teen years. A structural curve will be permanent and may be […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description spinalDisordersOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SPINAL DISORDERS</span>
+                <p class="">
+                  Symptoms, Diagnosis, Treatment & More Your backbone, or spine, consists of 26 bone discs, called vertebrae. The vertebrae protect your spinal cord and allow you to stand and bend. Several problems can change the structure of the spine, or damage the vertebrae and the surrounding tissue. These problems include infections, injuries, tumors, conditions, and bone […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description spinalFracturesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SPINAL FRACTURES</span>
+                <p class="">
+                  Healing Acute and Chronic Pain from Spinal Fractures A spinal fracture can range from a painful compression fracture, which is more commonly seen after minor trauma when you have osteoporosis, to a more severe injury such as a burst fracture from a car accident or fall from a significant height. These injuries will often result […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description spinalStenosisTreatmentInYourBackyardOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SPINAL STENOSIS TREATMENT IN YOUR BACKYARD</span>
+                <p class="">
+                  Reverse Spinal Stenosis Symptoms With Specialized Treatment Plans Spinal stenosis is pain that results from conditions that cause the spinal canal to become smaller or compress. The spinal canal is the open cavity that runs through the center of each vertebra and houses the spinal cord. When this hole gets compressed, it can pinch the […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description sportsInjuriesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SPORTS INJURIES</span>
+                <p class="">
+                  Don’t Sit on the Sidelines Sports injuries occur for a variety of reasons. Acute injuries occur when contact or force is too much for your muscles, joints or bones to absorb. A twisted ankle, an awkward landing, a fall off your bicycle, or a collision at second base are examples of this type of injury. […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description upperExtremityPainOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">UPPER EXTREMITY PAIN</span>
+                <p class="">
+                  Free Yourself From Chronic Neck, Back and Shoulder Pain Upper extremity pain is a broad term that describes generalized pain in the upper areas of the body. You may experience upper extremity pain in the wrists, hands, arms or shoulders. Many people experience upper extremity pain at some point in their lives. Depending on the […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description vertebralCompressionFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">VERTEBRAL COMPRESSION FRACTURE</span>
+                <p class="">
+                  Get Your Back Back Vertebral compression fractures (VCFs) occur when the bony block or vertebral body in the spine collapses, which can lead to severe pain, deformity and loss of height. VCFs are the most common fracture in patients with osteoporosis, affecting roughly 750,000 people each year. Even more, VCFs affect an estimated 25 percent […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description arthritis&BursitisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">ARTHRITIS & BURSITIS PAIN</span>
+                <p class="">
+                  Don’t Let Pain Rule Your Life Arthritis means “inflammation of a joint.” In some forms of arthritis, such as osteoarthritis, the inflammation arises because the smooth covering (e.g., articular cartilage) on the ends of bones becomes damaged or worn. Osteoarthritis is commonly found in weight-bearing joints, like the hips or knees. In other forms of […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description golfersElbowOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">GOLFER’S ELBOW</span>
+                <p class="">
+                  Find Relief from Your Pain Golfer’s elbow, also referred to as medial epicondylitis, is a painful condition that impacts athletes and non-athletes, alike. It occurs when there is inflammation or a partial tear to the area where forearm tendons meet the inside of the elbow. The injury may be caused by a single traumatic action, […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description humerusFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">HUMERUS FRACTURE</span>
+                <p class="">
+                  Understanding Shoulder Trauma The humerus is one of the long bones of the arm. The distal, or bottom, end contributes to the elbow joint. The proximal, or top, end contributes to the shoulder joint. Fractures of the humerus typically occur as the result of a trauma, such as a fall where the individual lands directly […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description jointPainInflammationOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">JOINT PAIN & INFLAMMATION</span>
+                <p class="">
+                  Don’t Let Pain Hold You Back Creaky, achy joints. A twinge in the knee. A sharp shooting pain in the groin. All too often, we assume that joint pain is a normal part of aging, and something that we just have to learn to live with. Nothing could be further from the truth. With a […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>      
+            <div class="symptom-description osteoarthritisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">OSTEOARTHRITIS</span>
+                <p class="">
+                  Diagnose, Treat & Get Moving Again Osteoarthritis (OA), commonly referred to as “wear and tear” arthritis, is the most common form of arthritis in the world. It typically affects weight-bearing joints in the hips, knees and spine. When OA begins to affect your hip or another join, a series of reactions take place that begin to […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description repetitiveMotionInjuriesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">REPETITIVE MOTION INJURIES</span>
+                <p class="">
+                  Reliable Treatment for Repetitive Stress Injuries Repetitive motion injuries are among the most common injuries in the United States, making up a large portion of athletic and work-related injuries. This condition develops from microscopic tears in the body’s tissues or strains to the body’s muscles, nerves, ligaments or tendons that occur from performing daily activities […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description rheumatoidArthritisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">RHEUMATOID ARTHRITIS</span>
+                <p class="">
+                  Diagnose, Treat & Relieve Pain Rheumatoid arthritis (RA) is an autoimmune disease in which the body’s defense system turns against itself and causes attacks on healthy joints, cartilage and tissues throughout the body, along with damage to blood vessels, nerves and tendons. Typically, individuals affected by the condition are between the ages of 40 and […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description tendinitisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">TENDINITIS</span>
+                <p class="">
+                  Achieve Mobility Without Pain Tendinitis is the inflammation and swelling of a tendon, which is the structure that connects to muscle to bone. While tendinitis can occur in any of your body’s tendons, it most notably develops in your shoulders, elbows, wrists, knees and heels.
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>    
+            <div class="symptom-description tennisElbowOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">TENNIS ELBOW</span>
+                <p class="">
+                  Get the Support You Need From This Elite Team in Bergen County Many sports place considerable strain on the joints of participating athletes, especially those requiring regular swinging and throwing. The elbow is especially vulnerable to this type of stress and injury. Tennis elbow, or lateral epicondylitis, is a very common injury—not just to tennis players, […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description achillesTendonTear&RuptureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">ACHILLES TENDON TEAR & RUPTURE</span>
+                <p class="">
+                  The Best Achilles Treatment in the Tri-State Area The Achilles tendon is the largest tendon in your body. It connects the muscles in the back of your lower leg to your heel bone (e.g., the calcaneus) and must withstand large forces during sporting exercises and pivoting. There are two main types of injuries that affect […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>      
+            <div class="symptom-description achillesTendonosisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">ACHILLES TENDONOSIS</span>
+                <p class="">
+                  Say ‘Goodbye’ to Pain & Stiffness The largest tendon in the human body, the Achilles tendon is connected to the calf muscles and allows feet to flex during walking, running and jumping. Although the Achilles tendon can withstand great stresses from running and jumping, it is also prone to tendonosis, a condition associated with overuse […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description adultAcquiredFlatfootDeformityOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">ADULT-ACQUIRED FLATFOOT DEFORMITY</span>
+                <p class="">
+                  Acknowledge Foot Pain & Seek Innovative Treatment Adult-acquired flatfoot deformity (AAFD) is a painful, progressive condition that occurs when the soft tissues of the foot are overstretched and torn, causing the arch of the foot to collapse. The posterior tibial tendon attaches to the bones on the inside of the foot, maintains the foot’s arch […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description ankleFracturesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">ANKLE FRACTURES</span>
+                <p class="">
+                  Here to Help You Every Step of the Way A broken ankle is also known as an ankle fracture. This means that one or more of the bones that make up the ankle joint are broken. A fractured ankle can range from a simple break in one bone, which may not stop you from walking, […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>    
+            <div class="symptom-description ankleSprains&StrainsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">ANKLE SPRAINS & STRAINS</span>
+                <p class="">
+                  Stop the Pain & Get Back On Your Feet Ankle injuries are often thought of as sports injuries—but you don’t have to be an athlete or even a “weekend warrior” to turn your ankle and hurt it. The truth is that a sprained ankle is a very common injury. A strained or sprained ankle can […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>      
+            <div class="symptom-description arthritisOfTheFootAndAnkleOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">ARTHRITIS OF THE FOOT AND ANKLE</span>
+                <p class="">
+                  Don’t Let Joint Pain Rule Your Life One common type of foot and ankle condition is arthritis. As people age, the cartilage that once served as a shock absorber for the body’s joints begins to wear away. This deterioration causes the ankle and foot bones to rub against each other, resulting in inflammation, pain and […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>    
+            <div class="symptom-description bunionsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">BUNIONS</span>
+                <p class="">
+                  Stop Suffering & Seek Treatment Today A bunion is a common foot deformity that’s characterized by a bump on the side of the big toe. In that characteristic “bump,” you are actually seeing the effect of additional bone formation in the joint and a mechanical misalignment of the big toe. A bunion causes the big […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description calcaneusFracturesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">CALCANEUS (HEEL BONE) FRACTURES</span>
+                <p class="">
+                  Get Back on Your Feet A fracture of the calcaneus, or heel bone, can be a painful and disabling injury. This type of fracture commonly occurs during a high-energy event—such as a car crash or a fall from a ladder—when the heel is crushed under the weight of the body. When this occurs, the heel […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description clubfootOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">CLUBFOOT</span>
+                <p class="">
+                  Improving Appearance, Restoring Function Clubfoot is a congenital birth disorder that occurs in one out of every 1,000 newborns. When a baby is born with tendons and calf muscles that are shorter than normal, it causes the baby’s foot to twist out of position or shape producing clubfoot. Ranging from mild to severe with the […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description cornsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">CORNS</span>
+                <p class="">
+                  Prevention, Diagnosis & Removal Repeated irritation and persistent friction to an area of the foot will cause skin to thicken and harden, creating corns. Corns are localized areas with tender, soft centers, surrounded by yellowish, dead skin. The extra skin develops as a natural defense mechanism, and persistent friction may be due to shoes or […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description diabeticFootOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">DIABETIC FOOT</span>
+                <p class="">
+                  Alleviate the Pain & Prevent Further Problems Diabetes is a disease that affects the whole body, prompting nerve damage and poor circulation. The lack of circulation and poor blood flow to the body’s extremities allows for a small matter or infection to progress into a more serious problem. If gone unnoticed or left unchecked, a […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>    
+            <div class="symptom-description fibulaFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">FIBULA FRACTURE</span>
+                <p class="">
+                  A Step in the Right Direction A fibula fracture is a relatively common condition that’s characterized by a break in the smaller of the long bones of the lower leg, known as the fibula. During certain activities, such as landing from a jump, a forceful impact to the outer lower leg or ankle, or when […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>      
+            <div class="symptom-description foot&AnkleConditionsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">FOOT & ANKLE CONDITIONS</span>
+                <p class="">
+                  Don’t Sit on the Sidelines Every day, our feet and ankles bear the brunt of pressure that comes from supporting our full body weight—and the incredible demand we put on them is often more than they can endure.
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description ganglionCystsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">GANGLION CYSTS</span>
+                <p class="">
+                  Discover, Remove & Restore Functionality Ganglion cysts are harmless tumors, masses or lumps that occur adjacent to joints or tendons, and are most commonly found on the hands and wrists. Depending on the extent of the concurring wrist activity, these lumps are susceptible to frequently appearing, disappearing or changing in size. Ganglion cysts grow from […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description hammertoeOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">HAMMERTOE</span>
+                <p class="">
+                  Expedite Your Return to Activity Affecting any but the big toe, hammertoe is characterized by a bending of one or both toe joints. The deformity generally worsens over time, and patients may develop corns or calluses as a result of bent toes rubbing against shoes. Untreated hammertoes become rigid, leading to sores, infection and pain. […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description heelPainOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">HEEL PAIN</span>
+                <p class="">
+                  Professional Care & Treatment For Foot Pain There are numerous causes for heel pain, including arthritis, stress fractures and nerve irritation. The two most common contributors of chronic pain are heel spurs and inflammation of the plantar fascia—a ligament attached to the heel bone that helps maintain the foot’s arch. In plantar fasciitis, there are […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description ingrownToenailOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">INGROWN TOENAIL</span>
+                <p class="">
+                  Prevention and Treatment to Outgrow the Pain An ingrown toenail is a painful condition, triggered by a corner or side of a toenail curving inward and growing into the soft flesh of the toe. Even though the big toe is most commonly affected, any toe is susceptible to developing the condition. If an ingrown toenail […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description intoeingOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">INTOEING</span>
+                <p class="">
+                  Straightforward Treatment for a Straightforward Walk Commonly referred to as a “pigeon-toe,” intoeing is a congenital condition in which the toes and feet are turned inward, rather than straight forward. Though this condition frequently dissipates on its own in time, there are cases where children continuously struggle with intoeing’s lasting effects well into their later […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description jonesFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">JONES FRACTURE</span>
+                <p class="">
+                  Keeping Up with the Jones Fracture Metatarsal fractures are common injuries of the forefoot. The Jones fracture, more specifically, is a common fracture of the fifth metatarsal. Generally, it is injured during inversion-type injuries, such as ankle sprains. Fractures to the fifth metatarsal may also occur from direct or crushing types of injuries, as well […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description jonesFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">JONES FRACTURE</span>
+                <p class="">
+                  Keeping Up with the Jones Fracture Metatarsal fractures are common injuries of the forefoot. The Jones fracture, more specifically, is a common fracture of the fifth metatarsal. Generally, it is injured during inversion-type injuries, such as ankle sprains. Fractures to the fifth metatarsal may also occur from direct or crushing types of injuries, as well […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description lisfrancInjuryOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">LISFRANC (MIDFOOT) INJURY</span>
+                <p class="">
+                  Everything You Need to Know Located in the middle of the foot, the Lisfranc joint is the point at which the metatarsal bones, which are the long bones that lead to the toes, attach to the tarsal bones (e.g., arch bones). Lisfranc injuries result if bones in the midfoot are broken or if ligaments that […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description mortonsNeuromaOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">MORTON’S NEUROMA</span>
+                <p class="">
+                  Fix the Ball of the Foot, Pass on the Pain, Return to the Game Morton’s Neuroma is a painful and uncomfortable condition that affects the ball of the foot, most commonly in between the third and fourth toes. This condition often causes an individual to feel as if he or she is standing on a […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description plantarFasciitisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">PLANTAR FASCIITIS</span>
+                <p class="">
+                  How to Deal, Heal & Get Moving Again The alarm clock goes off, and it’s time to start your day. As you climb out of bed, though, you experience pain in your foot—as you do nearly every day. If your first few steps out of bed in the morning cause severe pain in the heel […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>
+            <div class="symptom-description posteriorTibialTendonDysfunctionOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">POSTERIOR TIBIAL TENDON DYSFUNCTION</span>
+                <p class="">
+                  Catch It Early & Halt the Worry Attaching the calf muscle to the foot bones, the posterior tibial tendon serves an important role in supporting the foot structure and enabling proper foot function. Posterior tibial tendon dysfunction (PTTD) is caused by overuse and repetitive stress, which results in overstretching and inflammation of the tendon. When […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description posteriorTibialTendonDysfunctionOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">REPETITIVE MOTION INJURIES</span>
+                <p class="">
+                  Catch It Early & Halt the Worry Attaching the calf muscle to the foot bones, the posterior tibial tendon serves an important role in supporting the foot structure and enabling proper foot function. Posterior tibial tendon dysfunction (PTTD) is caused by overuse and repetitive stress, which results in overstretching and inflammation of the tendon. When […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description sesamoiditisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SESAMOIDITIS</span>
+                <p class="">
+                  Diagnose, Treat & Walk Pain-Free Again Sesamoids are the only bones in the body that are not connected to another bone, but rather solely connected by tendons or embedded in a mass of muscle. There are three sesamoids: the kneecap, which is the largest, and two small, pea-sized sesamoids located on either side of the […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description sesamoiditisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SESAMOIDITIS</span>
+                <p class="">
+                  Diagnose, Treat & Walk Pain-Free Again Sesamoids are the only bones in the body that are not connected to another bone, but rather solely connected by tendons or embedded in a mass of muscle. There are three sesamoids: the kneecap, which is the largest, and two small, pea-sized sesamoids located on either side of the […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description talusFracturesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">TALUS FRACTURES</span>
+                <p class="">
+                  Symptoms, Diagnosis & Treatment The talus is located in the middle of the ankle joint and connects the shinbone to the heel bone and foot. Acting as a hinge, the talus enables the foot to flex up and down, and side to side. Therefore, injuries to the talus have a profound effect on movement and […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description tarsalTunnelSyndromeOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">TARSAL TUNNEL SYNDROME</span>
+                <p class="">
+                  Get Healthy Feet for An Active Life Tarsal tunnel syndrome (TTS) is the compression or squeezing of the tibial nerve, which runs through the tarsal tunnel on the inside of the ankle and leads into the foot, producing pain or a tingling sensation anywhere along the nerve’s pathway. The tarsal tunnel is a narrow space […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>    
+            <div class="symptom-description carpalTunnelSyndromeOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">CARPAL TUNNEL SYNDROME</span>
+                <p class="">
+                  Our Carpal Tunnel Specialists in Bergen County Can Restore Feeling, Eliminate Pain The “carpal tunnel” is a narrow passageway that runs from the base of the hand through the wrist. The median nerve, which controls our sense of touch in the palm, and touch and fine movement in the thumb and three larger fingers, passes […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description deQuervainsTenosynovitisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">DE QUERVAIN’S TENOSYNOVITIS</span>
+                <p class="">
+                  Freedom From Pain & Swelling De Quervain’s tenosynovitis, or tendonosis, is a painful condition that occurs when the tendons around the base of the thumb are irritated or constricted. The word “tendonosis” refers to a swelling of the tendons. Swelling of the tendons, and the tendon sheath, can cause pain and tenderness along the thumb […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description distalRadiusFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">DISTAL RADIUS FRACTURE (BROKEN WRIST)</span>
+                <p class="">
+                  A Patient’s Guide to Distal Radius Fractures Wrist fractures, or distal radius fractures, are very common. In fact, the radius is the most commonly broken bone in the arm. The radius is the larger of the two bones of the forearm. The end toward the wrist is called the distal end. A fracture of the […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description dupuytrensContracturesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">DUPUYTREN’S CONTRACTURES</span>
+                <p class="">
+                  Restoring Dexterity, Improving Strength Dupuytren’s contracture is a hand deformity that usually develops over years. The condition affects a layer of tissue that lies under the skin of your palm. Knots of tissue form under the skin—eventually creating a thick cord that can pull one or more fingers into a bent position. Although painless, the […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>     
+            <div class="symptom-description hand&FingerFracturesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">HAND & FINGER FRACTURES</span>
+                <p class="">
+                  Symptoms & Treatment Options Your hand consists of 27 bones: eight bones in your wrist (carpals), five bones in the palm of your hand (metacarpals), and 14 bones in your fingers (phalanges). The bones in a normal hand line up precisely, and they enable you to perform many specialized functions, such as grasping a pen […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>      
+            <div class="symptom-description FingerFracturesOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">OSTEOARTHRITIS</span>
+                <p class="">
+                  Symptoms & Treatment Options Your hand consists of 27 bones: eight bones in your wrist (carpals), five bones in the palm of your hand (metacarpals), and 14 bones in your fingers (phalanges). The bones in a normal hand line up precisely, and they enable you to perform many specialized functions, such as grasping a pen […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>    
+            <div class="symptom-description scaphoidFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SCAPHOID FRACTURE</span>
+                <p class="">
+                  Detection and Diagnosis The scaphoid bone is one of the carpal bones on the thumb side of the wrist. This bone is important for both motion and stability in the wrist joint, and it can most easily be identified when your thumb is held in a “hitch-hiking” position. A scaphoid fracture usually occurs when you […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description hipBursitisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">HIP BURSITIS</span>
+                <p class="">
+                  Hip Pain Prevention & Relief A bursa is a fluid-filled sac that acts as a cushion between tendons, bone, and skin, which helps your joints move with ease. There are over 150 bursae in your body, and several are found around the outer area of the hip, near the portion of your thighbone (e.g., the […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description hipImpingementOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">HIP IMPINGEMENT</span>
+                <p class="">
+                  Early Treatment Can Help Prevent Problems Caused by Arthritis Hip impingement occurs most frequently in young athletes—and often with little or no symptoms. That’s why it is so important to consult with an orthopaedic specialist if your child (or any family member) is exhibiting signs of hip challenges. Your hip is a ball-and-socket joint. The femoral […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>     
+            <div class="symptom-description jointPain&InflammationOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">JOINT PAIN & INFLAMMATION</span>
+                <p class="">
+                  Don’t Let Pain Hold You Back Creaky, achy joints. A twinge in the knee. A sharp shooting pain in the groin. All too often, we assume that joint pain is a normal part of aging, and something that we just have to learn to live with. Nothing could be further from the truth. With a […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description ACLTearOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">ACL TEAR</span>
+                <p class="">
+                  Diagnose, Treat Torn ACL Injuries & Get Moving Again The anterior cruciate ligament (ACL) is a ligament that connects the femur (e.g., thighbone) with the tibia (e.g., shinbone). ACL injuries occur when a patient’s knee is hyperextended, twisted or forced to the side. While female athletes are more prone to ACL injuries than male athletes, […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description chondromalaciaPatellaLimbOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">CHONDROMALACIA PATELLA (LIMB LENGTH DISCREPANCY)</span>
+                <p class="">
+                  Diagnose and Overcome LLD Differences between the lengths of the upper and/or lower arms and the upper and/or lower legs are called limb length discrepancies (LLD). The conditions occur when bones or joints in the arms or legs are abnormal or become damaged. Doctors might refer to these conditions as limb length discrepancies, limb differences […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>     
+            <div class="symptom-description chondromalaciaPatellaRunnerOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">CHONDROMALACIA PATELLA (RUNNER’S KNEE)</span>
+                <p class="">
+                  Don’t Let Runner’s Knee Hold You Back The patellofemoral joint is made of the patella (e.g., kneecap) and femur (e.g., thighbone). The kneecap glides up and down along a groove in the front of the thighbone, helping the quadriceps muscles to bend and straighten the leg. Patellofemoral pain—sometimes referred to as “Runner’s Knee”—occurs with overuse […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description femurFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">FEMUR FRACTURE</span>
+                <p class="">
+                  Find Facts, Symptoms & Treatments A femur fracture is a break in the thighbone. The femur can be fractured in three areas: the head/neck of the bone (e.g., the upper end, near the pelvis), the main shaft of the bone, or the lower end near the knee. The femur is the longest and strongest bone […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description kneeBursitisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">KNEE BURSITIS</span>
+                <p class="">
+                  Leave Knee Pain Behind Bursae are fluid-filled sacs that cushion the bones, tendons and ligaments near joints. The knee joint is surrounded by three major bursae. When excessive amounts of fluid are produced in these sacs, the pain and inflammation of bursitis can result. This fluid build-up can happen in two different ways. The first […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description LCLMCLTearsOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">LCL/MCL TEARS</span>
+                <p class="">
+                  Stop the Pain & Heal Quickly Medial collateral ligament (MCL) and lateral collateral ligament (LCL) sprains are knee injuries. The MCL is the ligament that’s located on the inside of your knee joint. It links your thighbone (e.g., femur) and shinbone (e.g., tibia). The LCL, on the other hand, is the ligament that’s located on […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description meniscusTearOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">MENISCUS TEAR</span>
+                <p class="">
+                  Getting You Back on Your Feet The knee joint functions when a myriad of complex parts—such as ligaments, tendons and bone—work in conjunction with one another. Unfortunately, many of these complex parts are prone to injury. One of the most commonly injured parts of the knee is the menisci, which are two wedge-shaped cartilage pieces […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description patellarFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">PATELLAR FRACTURE</span>
+                <p class="">
+                  Comprehensive Care for Broken Kneecaps The patella, or your kneecap, is a small bone located in front of your knee joint—where the thighbone (e.g., femur) and shinbone (e.g., tibia) meet. It protects your knee and connects the muscles in the front of your thigh to your tibia to allow to extend your knee. Because your […] 
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description patellarSubluxationDislocationOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">PATELLAR SUBLUXATION/DISLOCATION</span>
+                <p class="">
+                  Get Back in The Groove When things are “in the groove,” they’re going smoothly. That certainly is the case with your knee. As long as your kneecap (patella) stays in its groove in the knee, you can walk, run, sit, stand and move easily. When the kneecap slips out of the groove, though, problems and […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description tibiaFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">TIBIA FRACTURE</span>
+                <p class="">
+                  Recapture Your Quality of Life Tur with these types of fractures.
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div> 
+            <div class="symptom-description tibiaFractureOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">NECK INJURIES</span>
+                <p class="">
+                  Recapture Your Quality of Life Tur with these types of fractures.
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>  
+            <div class="symptom-description rotatorCuffTearOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">ROTATOR CUFF TEAR</span>
+                <p class="">
+                  Consult Our Expert Rotator Cuff Surgeons Although injury to the rotator cuff can be the result of trauma, such as a dislocation or fracture, tears in any component of the rotator cuff are most often caused by overuse, which are commonly referred to as wear-and-tear injuries. Any sport or activity that requires repetitive arm movement, […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>   
+            <div class="symptom-description shoulderBursitisOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SHOULDER BURSITIS</span>
+                <p class="">
+                  Eliminate Shoulder Pain Bursitis of the shoulder occurs when there is swelling and redness between the top of the arm bone (e.g., humerus) and the tip of the shoulder (e.g., acromion). Between these bones lie the tendons of the rotator cuff and a fluid-filled sac (e.g., the bursa) that protects the tendons. Normally, the tendons […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+            <div class="symptom-description shoulderLabralTearOption" hidden >
+              <div class=" description">
+                <span onclick="closeDescriptionHandler()" class="close-description">x</span>
+                <span class="description-title">SHOULDER LABRAL TEAR</span>
+                <p class="">
+                  Symptoms & Treatment Options The shoulder joint is a “ball and socket” joint that enables the smooth gliding movements of the arms. The labrum, a fibrous section of cartilage, helps the shoulder to stabilize, move and flex. The labrum also offers joint cushioning and aids in ligament attachment. A shoulder labral tear, then, is an […]
+                </p>
+                <a class="read-more-button">READ MORE</a>
+              </div>
+            </div>       
+        </div>
+        <div class="symptoms-box" >
+          <ul class="list-of-symptoms active-condition backOption" id="backOption">
+            <li  class="symptoms-title">BACK CONDITIONS</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection backPainOption"> Back Pain</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection brokenBonesOption" >Broken Bones</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection bulgingDiscsOption">Bulging Discs</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection coccydyniaOption">Coccydynia</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection compressionFracturesOption" >Compression Fractures</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection discDegenerationOption" >Disc Degeneration</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection HerniatedDiscOption" >Herniated Disc Management</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection herniatedDiscsOption" >Herniated Discs</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection injuredMusclesTendonsAndLigamentsOption">Injured Muscles, Tendons and Ligaments</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection lowerBackPainOption" >Lower Back Pain</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection muscleSpasmsOption" >Muscle Spasms</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection herniatedDiscsOption" >Herniated Discs</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection myelopathyOption" >Myelopathy</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection neckInjuriesOption" >Neck Injuries</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection NeuropathyOption">Neuropathy</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection occupationalInjuriesOption">Occupational Injuries</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection osteoporosis&BoneDensityOption">Osteoporosis & Bone Density</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection pinchedNerveOption">Pinched Nerve</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection pinchedNervesOption">Pinched Nerves</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection myelopathyOption">Myelopathy</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection radiculopathyOption">Radiculopathy</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection sacroiliacJointDysfunctionOption">Sacroiliac Joint Dysfunction</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection scoliosisOption">Scoliosis</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection spinalDisordersOption">Spinal Disorders</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection spinalFracturesOption">Spinal Fractures</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection spinalStenosisTreatmentInYourBackyardOption">Spinal Stenosis Treatment in Your Backyard</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection sportsInjuriesOption">Sports Injuries</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection upperExtremityPainOption">Upper Extremity Pain</li>
+            <li onclick="symptomClickHandler(event)" class="condition-selection vertebralCompressionFractureOption">Vertebral Compression Fracture</li>
+            </ul>
+            <ul class="list-of-symptoms elbowOption" id="elbowConditions">
+              <li class="symptoms-title">ELBOW CONDITIONS</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection arthritis&BursitisOption">Arthritis & Bursitis Pain</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection brokenBonesOption">Broken Bones</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection humerusFractureOption">Humerus Fracture</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection golfersElbowOption">Golfer’s Elbow</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection injuredMusclesTendonsandLigamentsOption">Injured Muscles, Tendons and Ligaments</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection jointPainInflammationOption">Joint Pain & Inflammation</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection occupationalInjuriesOption">Occupational Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection osteoarthritisOption">Osteoarthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection pinchedNerveOption">Pinched Nerve</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection repetitiveMotionInjuriesOption">Repetitive Motion Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection rheumatoidArthritisOption">Rheumatoid Arthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection sportsInjuriesOption">Sports Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection tendinitisOption">Tendinitis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection tennisElbowOption">Tennis Elbow</li>
+
+              </ul>
+            <ul class="list-of-symptoms footAndAnkleOption" id="footAndAnkleConditions">
+              <li class="symptoms-title" class="symptoms-title">FOOT AND ANKLE CONDITIONS</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection achillesTendonTear&RuptureOption">Achilles Tendon Tear & Rupture</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection achillesTendonosisOption">Achilles Tendonosis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection adultAcquiredFlatfootDeformityOption">Adult-Acquired Flatfoot Deformity</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection ankleFracturesOption">Ankle Fractures</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection ankleSprains&StrainsOption">Ankle Sprains & Strains</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection arthritis&BursitisOption">Arthritis & Bursitis Pain</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection arthritisOfTheFootAndAnkleOption">Arthritis of the Foot and Ankle</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection brokenBonesOption">Broken Bones</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection bunionsOption">Bunions</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection calcaneusFracturesOption">Calcaneus (Heel Bone) Fractures</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection clubfootOption">Clubfoot</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection cornsOption">Corns</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection diabeticFootOption">Diabetic Foot</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection fibulaFractureOption">Fibula Fracture</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection foot&AnkleConditionsOption">Foot & Ankle Conditions</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection ganglionCystsOption">Ganglion Cysts</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection hammertoeOption">Hammertoe</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection heelPainOption">Heel Pain</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection ingrownToenailOption">Ingrown Toenail</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection injuredMusclesTendonsAndLigamentsOption">Injured Muscles, Tendons and Ligaments</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection intoeingOption">Intoeing</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection jointPain&InflammationOption">Joint Pain & Inflammation</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection jonesFractureOption">Jones Fracture</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection lisfrancInjuryOption">Lisfranc (Midfoot) Injury</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection mortonsNeuromaOption">Morton’s Neuroma</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection neuropathyOption">Neuropathy</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection occupationalInjuriesOption">Occupational Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection osteoarthritisOption">Osteoarthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection plantarFasciitisOption">Plantar Fasciitis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection posteriorTibialTendonDysfunctionOption">Posterior Tibial Tendon Dysfunction</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection repetitiveMotionInjuriesOption">Repetitive Motion Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection rheumatoidArthritisOption">Rheumatoid Arthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection sesamoiditisOption">Sesamoiditis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection sportsInjuriesOption">Sports Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection talusFracturesOption">Talus Fractures</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection tarsalTunnelSyndromeOption">Tarsal Tunnel Syndrome</li>
+            </ul>
+            <ul class="list-of-symptoms handAndWristOption" id="handAndWristConditions">
+              <li class="symptoms-title">HAND AND WRIST CONDITIONS</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection arthritis&BursitisOption">Arthritis & Bursitis Pain</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection brokenBonesOption">Broken Bones</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection carpalTunnelSyndromeOption">Carpal Tunnel Syndrome</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection deQuervainsTenosynovitisOption">De Quervain’s Tenosynovitis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection distalRadiusFractureOption">Distal Radius Fracture (Broken Wrist)</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection dupuytrensContracturesOption">Dupuytren’s Contractures</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection ganglionCystsOption">Ganglion Cysts</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection hand&FingerFracturesOption">Hand & Finger Fractures</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection injuredMusclesTendonsAndLigamentsOption">Injured Muscles, Tendons and Ligaments</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection jointPain&InflammationOption">Joint Pain & Inflammation</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection neuropathyOption">Neuropathy</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection occupationalInjuriesOption">Occupational Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection osteoarthritisOption">Osteoarthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection osteoporosis&BoneDensityOption">Osteoporosis & Bone Density</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection pinchedNerveOption">Pinched Nerve</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection repetitiveMotionInjuriesOption">Repetitive Motion Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection rheumatoidArthritisOption">Rheumatoid Arthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection scaphoidFractureOption">Scaphoid Fracture</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection sportsInjuriesOption">Sports Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection tendinitisOption">Tendinitis</li>
+            </ul>
+            <ul class="list-of-symptoms hipOption" id="hipConditions">
+              <li class="symptoms-title">HIP CONDITIONS</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection arthritis&BursitisOption">Arthritis & Bursitis Pain</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection brokenBonesOption">Broken Bones</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection hipBursitisOption">Hip Bursitis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection hipImpingementOption">Hip Impingement</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection injuredMusclesTendonsAndLigamentsOption">Injured Muscles, Tendons and Ligaments</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection jointPain&InflammationOption">Joint Pain & Inflammation</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection occupationalInjuriesOption">Occupational Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection OsteoarthritisOption">Osteoarthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection rheumatoidArthritisOption">Rheumatoid Arthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection sportsInjuriesOption">Sports Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection tendinitisOption">Tendinitis</li>
+            </ul> 
+            <ul class="list-of-symptoms kneeOption" id="kneeConditions">
+              <li class="symptoms-title">KNEE CONDITIONS</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection ACLTearOption">ACL Tear</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection arthritis&BursitisOption">Arthritis & Bursitis Pain</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection brokenBonesOption">Broken Bones</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection chondromalaciaPatellaLimbOption">Chondromalacia Patella (Limb Length Discrepancy)</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection chondromalaciaPatellaRunnerOption">Chondromalacia Patella (Runner’s Knee)</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection femurFractureOption">Femur Fracture</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection injuredMusclesTendonsAndLigamentsOption">Injured Muscles, Tendons and Ligaments</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection jointPain&InflammationOption">Joint Pain & Inflammation</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection kneeBursitisOption">Knee Bursitis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection LCLMCLTearsOption">LCL/MCL Tears</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection meniscusTearOption">Meniscus Tear</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection occupationalInjuriesOption">Occupational Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection OsteoarthritisOption">Osteoarthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection patellarFractureOption">Patellar Fracture</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection patellarSubluxationDislocationOption">Patellar Subluxation/Dislocation</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection repetitiveMotionInjuriesOption">Repetitive Motion Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection rheumatoidArthritisOption">Rheumatoid Arthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection sportsInjuriesOption">Sports Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection tendinitisOption">Tendinitis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection tibiaFractureOption">Tibia Fracture</li>
+            </ul> 
+            <ul class="list-of-symptoms neckOption" id="neckConditions">
+              <li class="symptoms-title">NECK CONDITIONS</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection brokenBonesOption">Broken Bones</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection injuredMusclesTendonsAndLigamentsOption">Injured Muscles, Tendons and Ligaments</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection muscleSpasmsOption">Muscle Spasms</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection neckInjuriesOption">Neck Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection occupationalInjuriesOption">Occupational Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection pinchedNerveOption">Pinched Nerve</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection rheumatoidArthritisOption">Rheumatoid Arthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection sportsInjuriesOption">Sports Injuries</li>
+            </ul>
+            <ul class="list-of-symptoms shoulderOption" id="shoulderConditions">
+              <li class="symptoms-title">SHOULDER CONDITIONS</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection arthritis&BursitisOption">Arthritis & Bursitis Pain</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection brokenBonesOption">Broken Bones</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection humerusFractureOption">Humerus Fracture</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection injuredMusclesTendonsAndLigamentsOption">Injured Muscles, Tendons and Ligaments</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection neckInjuriesOption">Neck Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection occupationalInjuriesOption">Occupational Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection repetitiveMotionInjuriesOption">Repetitive Motion Injuries</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection rotatorCuffTearOption">Rotator Cuff Tear</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection rheumatoidArthritisOption">Rheumatoid Arthritis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection shoulderBursitisOption">Shoulder Bursitis</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection shoulderLabralTearOption">Shoulder Labral Tear</li>
+              <li onclick="symptomClickHandler(event)" class="condition-selection sportsInjuriesOption">Sports Injuries</li>
+            </ul> 
+        </div>
+        
+        
+        
+      </div>
+    
+    </head>
+    
+    <body>
+      <script src="symptom-checker.js"></script>
+    </body>
+</html>
