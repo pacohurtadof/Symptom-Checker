@@ -1,4 +1,5 @@
 function buttonClickHandlerBodyPart(e) {
+    console.log(e.id)
     //check for last active element and hide it
     if(document.getElementsByClassName("symptom-description"+' active-description')[0]){
       document.getElementsByClassName("symptom-description"+' active-description')[0].setAttribute("hidden","");
