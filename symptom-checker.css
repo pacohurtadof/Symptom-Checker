@@ -280,42 +280,42 @@
 
   .bodyIcon.backOption{
     left: 48%;
-    top: 25%;
+    top: 27%;
   }
 
   .bodyIcon.elbowOption{
-    left:63%;
-    top:33%;
+    left:61%;
+    top:34%;
   }
 
   .bodyIcon.footAndAnkleOption{
-    left:41%;
-    top:81%;
+    left:43%;
+    top:77%;
   }
 
   .bodyIcon.handAndWristOption{
-    left:30%;
+    left:33%;
     top:39%;
   }
 
   .bodyIcon.HipOption{
-    left:54%;
-    top:35%;
+    left:53%;
+    top:36%;
   }
 
   .bodyIcon.kneeOption{
-    left:55%;
+    left:54%;
     top:55%;
   }
 
   .bodyIcon.neckOption{
     left:48%;
-    top:-3%;
+    top: 1%;
   }
 
   .bodyIcon.shoulderOption{
-    left:37%;
-    top:-3%;
+    left:39%;
+    top: 1%;
   }
 
   .active-icon{
