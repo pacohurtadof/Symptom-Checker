@@ -103,11 +103,11 @@
     font-size: .9375em;
     margin: 4px 2px;
     cursor: pointer;
-    max-width: 80%;
-    width: 70%;
+    max-width: 90%;
+    width: 90%;
     max-height: 20%;
     position: relative;
-    line-height: 10px;
+    line-height: 1em;
     font-weight:bold;
     border-bottom: 1.5px dotted #51565e79;
     font-family: 'Open Sans', sans-serif;
