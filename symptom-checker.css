@@ -239,10 +239,10 @@
     position: relative;
     padding-top: 0px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
     padding: 50px;
     padding-top: 10px;
-    line-height: 20px;
+    line-height: 1.8em;
 }
 
 .description-title{
