@@ -53,12 +53,10 @@
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: .9375em;
     margin: 4px 2px;
     cursor: pointer;
-    max-width: 90%;
-    width: 90%;
+    width: 42%;
     max-height: 20%;
     position: relative;
     line-height: 1em;
@@ -67,6 +65,8 @@
     border-bottom: 1.5px dotted #51565e79;
     font-family: 'Open Sans', sans-serif;
     box-shadow: 0px 2px 5px #8888888a;
+    float: right;
+    margin-left: 10%;
 
   }
 
@@ -79,41 +79,23 @@
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: .9375em;
     margin: 4px 2px;
     cursor: pointer;
-    max-width: 90%;
-    width: 90%;
+    width: 42%;
     max-height: 20%;
     position: relative;
     line-height: 1em;
     font-weight:bold;
     border-bottom: 1.5px dotted #51565e79;
     font-family: 'Open Sans', sans-serif;
+    float: right;
+    margin-left: 10%;
   }
 
   .button:hover {
     background-color: #003a718c; 
-    border: none;
-    border-radius: 25px;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .9375em;
-    margin: 4px 2px;
-    cursor: pointer;
-    max-width: 90%;
-    width: 90%;
-    max-height: 20%;
-    position: relative;
-    line-height: 1em;
-    font-weight:bold;
-    border-bottom: 1.5px dotted #51565e79;
-    font-family: 'Open Sans', sans-serif;
-
   }
 
 
