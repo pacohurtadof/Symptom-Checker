@@ -123,23 +123,11 @@
   .read-more-button:hover {
     background-color: #f7f7f7; 
     border-color: #003b71;
+    color: #003b71;
     border-style: solid;
     border-radius: 25px;
     border-width: thin;
     color: #003b71;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .8375em;
-    margin: 4px 2px;
-    cursor: pointer;
-    max-width: 80%;
-    width: 60%;
-    max-height: 40%;
-    position: relative;
-    font-weight:bold;
-    
   }
 
   .close-description{
