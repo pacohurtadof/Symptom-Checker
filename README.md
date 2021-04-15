@@ -1,1 +1,3 @@
-# mono HTML
+# Mono HTML
+
+For updates check "updates" branch.
