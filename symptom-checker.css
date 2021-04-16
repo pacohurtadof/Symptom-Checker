@@ -361,7 +361,6 @@
       max-width: auto;
       min-height: 100%;
       overflow: hidden;
-      flex-direction: column;
       min-height: 500px;/*min-height funciona*/
       position: relative;
     }
