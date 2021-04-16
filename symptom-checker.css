@@ -310,15 +310,15 @@
     to {opacity: 100%;}
   }
  
-
-  @media screen and (min-width: 993px) and (max-width: 1024px) { /*ipad*/
+/*
+  @media screen and (min-width: 993px) and (max-width: 1024px) { 
     .symptom-checker-container {
       display: flex;
       max-width: auto;
       min-height: 100%;
       overflow: hidden;
       flex-direction: column;
-      min-height: 500px;/*min-height funciona*/
+      min-height: 500px;
     }
     .buttons{
       display: none;
@@ -331,7 +331,7 @@
     .symptoms-box{
      /* margin-left:200px;
       margin-right: 200px;
-      margin-bottom:200px;*/
+      margin-bottom:200px;
       justify-content:flex-start;
       align-items: center;
       position: relative;
@@ -353,7 +353,7 @@
     }
 
     
-  }
+  }*/
 
   @media screen and (max-width: 992px) { /*cell*/
     .symptom-checker-container {
@@ -363,13 +363,14 @@
       overflow: hidden;
       flex-direction: column;
       min-height: 500px;/*min-height funciona*/
+      position: relative;
     }
     .buttons{
-      display: none;
     }
+
     #symptoms-model{
       min-height: 60%;
-      width: 50%;
+      width: 100%;
 
     }
     .symptoms-box{
@@ -379,7 +380,7 @@
       justify-content:flex-start;
       align-items: center;
       position: relative;
-      max-height: 40%;
+      display: none;
     }
 
     .list-of-symptoms{
@@ -394,6 +395,11 @@
     .description{
       font-size: 1.1em;
       line-height: normal;
+    }
+
+    .bodyIcon{
+      height: 2%;
+      width: 7%;
     }
 
     
