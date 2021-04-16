@@ -1,3 +1,3 @@
 # Mono HTML
 
-For updates check "updates" branch.
+For updates check "main" branch.
