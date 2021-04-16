@@ -21,6 +21,7 @@
     list-style-type: none;
     height: 100%;
     padding-right: 35px;
+    width: 100%;
     
 }
 
@@ -53,12 +54,10 @@
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: .9375em;
     margin: 4px 2px;
     cursor: pointer;
-    max-width: 90%;
-    width: 90%;
+    width: 42%;
     max-height: 20%;
     position: relative;
     line-height: 1em;
@@ -67,6 +66,8 @@
     border-bottom: 1.5px dotted #51565e79;
     font-family: 'Open Sans', sans-serif;
     box-shadow: 0px 2px 5px #8888888a;
+    float: right;
+    margin-left: 10%;
 
   }
 
@@ -79,41 +80,23 @@
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: .9375em;
     margin: 4px 2px;
     cursor: pointer;
-    max-width: 90%;
-    width: 90%;
+    width: 42%;
     max-height: 20%;
     position: relative;
     line-height: 1em;
     font-weight:bold;
     border-bottom: 1.5px dotted #51565e79;
     font-family: 'Open Sans', sans-serif;
+    float: right;
+    margin-left: 10%;
   }
 
   .button:hover {
     background-color: #003a718c; 
-    border: none;
-    border-radius: 25px;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .9375em;
-    margin: 4px 2px;
-    cursor: pointer;
-    max-width: 90%;
-    width: 90%;
-    max-height: 20%;
-    position: relative;
-    line-height: 1em;
-    font-weight:bold;
-    border-bottom: 1.5px dotted #51565e79;
-    font-family: 'Open Sans', sans-serif;
-
   }
 
 
@@ -140,23 +123,11 @@
   .read-more-button:hover {
     background-color: #f7f7f7; 
     border-color: #003b71;
+    color: #003b71;
     border-style: solid;
     border-radius: 25px;
     border-width: thin;
     color: #003b71;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .8375em;
-    margin: 4px 2px;
-    cursor: pointer;
-    max-width: 80%;
-    width: 60%;
-    max-height: 40%;
-    position: relative;
-    font-weight:bold;
-    
   }
 
   .close-description{
@@ -339,15 +310,15 @@
     to {opacity: 100%;}
   }
  
-
-  @media screen and (min-width: 993px) and (max-width: 1024px) { /*ipad*/
+/*
+  @media screen and (min-width: 993px) and (max-width: 1024px) { 
     .symptom-checker-container {
       display: flex;
       max-width: auto;
       min-height: 100%;
       overflow: hidden;
       flex-direction: column;
-      min-height: 500px;/*min-height funciona*/
+      min-height: 500px;
     }
     .buttons{
       display: none;
@@ -360,7 +331,7 @@
     .symptoms-box{
      /* margin-left:200px;
       margin-right: 200px;
-      margin-bottom:200px;*/
+      margin-bottom:200px;
       justify-content:flex-start;
       align-items: center;
       position: relative;
@@ -382,7 +353,7 @@
     }
 
     
-  }
+  }*/
 
   @media screen and (max-width: 992px) { /*cell*/
     .symptom-checker-container {
@@ -392,13 +363,14 @@
       overflow: hidden;
       flex-direction: column;
       min-height: 500px;/*min-height funciona*/
+      position: relative;
     }
     .buttons{
-      display: none;
     }
+
     #symptoms-model{
       min-height: 60%;
-      width: 50%;
+      width: 100%;
 
     }
     .symptoms-box{
@@ -408,7 +380,7 @@
       justify-content:flex-start;
       align-items: center;
       position: relative;
-      max-height: 40%;
+      display: none;
     }
 
     .list-of-symptoms{
@@ -423,6 +395,11 @@
     .description{
       font-size: 1.1em;
       line-height: normal;
+    }
+
+    .bodyIcon{
+      height: 2%;
+      width: 7%;
     }
 
     
