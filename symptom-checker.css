@@ -374,7 +374,7 @@
     
   }*/
 
-  @media screen and (max-width: 480px) { /*cell*/
+  @media screen and (max-width: 980px) { /*cell*/
     .symptom-checker-container {
       display: flex;
       max-width: auto;
@@ -443,6 +443,7 @@
 
     .icon-trigger-points-mobile{
       display: unset;
+      position: relative;
     }
 
     .icon-trigger-points{
