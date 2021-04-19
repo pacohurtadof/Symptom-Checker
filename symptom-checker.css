@@ -300,6 +300,12 @@
     height: 100%;
   }
 
+  .icon-trigger-points-mobile{
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
   .buttons-mobile{
     display: none;
     min-width: 33.333%;
@@ -433,6 +439,14 @@
 
     .buttons-mobile{
       display: flex;
+    }
+
+    .icon-trigger-points-mobile{
+      display: unset;
+    }
+
+    .icon-trigger-points{
+      display: none;
     }
 
     .bodyIcon.backOption{
