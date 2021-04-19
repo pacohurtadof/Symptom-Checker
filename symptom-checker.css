@@ -435,5 +435,45 @@
       display: flex;
     }
 
+    .bodyIcon.backOption{
+      left: 46%;
+      top: 29%;
+    }
+
+    .bodyIcon.elbowOption{
+      left: 78%;
+      top: 38%;
+    }
+
+    .bodyIcon.footAndAnkleOption {
+      left: 35%;
+      top: 77%;
+    }
+
+    .bodyIcon.handAndWristOption {
+      left: 12%;
+      top: 43%;
+    }
+
+    .bodyIcon.hipOption {
+      left: 57%;
+      top: 40%;
+    }
+
+    .bodyIcon.kneeOption {
+      left: 59%;
+      top: 58%;
+    }
+
+    .bodyIcon.neckOption {
+      left: 46%;
+      top: 10%;
+    }
+
+    .bodyIcon.shoulderOption{
+      left: 26%;
+      top: 11%;
+    }
+
     
   }
