@@ -57,7 +57,8 @@
     font-size: .9375em;
     margin: 4px 2px;
     cursor: pointer;
-    width: 42%;
+    min-width: 80%;
+    max-width: 100%;
     max-height: 20%;
     position: relative;
     line-height: 1em;
@@ -83,7 +84,8 @@
     font-size: .9375em;
     margin: 4px 2px;
     cursor: pointer;
-    width: 42%;
+    min-width: 80%;
+    max-width: 100%;
     max-height: 20%;
     position: relative;
     line-height: 1em;
@@ -448,6 +450,10 @@
 
     .icon-trigger-points{
       display: none;
+    }
+
+    .bodyIcon{
+      position: relative;
     }
 
     .bodyIcon.backOption{
