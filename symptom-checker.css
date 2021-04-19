@@ -32,7 +32,6 @@
     display: flex;
     flex-direction: column;
     min-width: 33.33%;
-    height: 100%;
     text-align: center;
     justify-content: center;
     overflow: hidden;
@@ -376,7 +375,7 @@
     
   }*/
 
-  @media screen and (max-width: 980px) { /*cell*/
+  @media screen and (max-width: 480px) { /*cell*/
     .symptom-checker-container {
       display: flex;
       max-width: auto;
@@ -448,12 +447,12 @@
       position: relative;
     }
 
-    .icon-trigger-points{
-      display: none;
+    .icon-trigger-points-mobile a{
+      display: block;
     }
 
-    .bodyIcon{
-      position: relative;
+    .icon-trigger-points{
+      display: none;
     }
 
     .bodyIcon.backOption{
