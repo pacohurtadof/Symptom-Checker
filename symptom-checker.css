@@ -368,7 +368,7 @@
     
   }*/
 
-  @media screen and (max-width: 992px) { /*cell*/
+  @media screen and (max-width: 480px) { /*cell*/
     .symptom-checker-container {
       display: flex;
       max-width: auto;
