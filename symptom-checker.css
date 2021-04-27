@@ -227,23 +227,22 @@
     font-size: .98em;
 }
   
-  #symptoms-model {
-      background: url(https://www.kayalortho.com/wp-content/themes/kayaltheme/img/symptoms-model-bg.gif) no-repeat center center #003b71;
-      border-radius: 5px;
-      left: 50%;
-      top: 0;
-      width: 100%;
-  }
+#symptoms-model {
+    background: url(https://i.imgur.com/Wzn4F8Y.jpg) no-repeat center center;
+    background-size: 110% 100%;
+    border-radius: 5px;
+    left: 50%;
+    top: 0;
+    width: 100%;
+}
 
   .bodyIcon {
-    height: 3%;
-    width: 4%;
+    height: 2%;
+    width: 2.2%;
     border-radius: 50%;
     background-color: #9edae6;
     background-clip: content-box;
-    box-shadow:
-    0 0 0 4px #d2f2f9, 
-    0 0 0 7px #f1f7f93d;
+    box-shadow: 0 0 0 3px #d2f2f9, 0 0 0 5px #f1f7f93d;
     transition: border-color 200ms ease-in, background-color 200ms ease-in;
     animation-name: fade-out;
     animation-iteration-count: infinite;
@@ -253,28 +252,28 @@
   }
 
   .bodyIcon.backOption{
-    left: 48%;
-    top: 27%;
+    left: 49%;
+    top: 25%;
   }
 
   .bodyIcon.elbowOption{
-    left:61%;
-    top:34%;
+    left:64%;
+    top:33%;
   }
 
   .bodyIcon.footAndAnkleOption{
     left:43%;
-    top:77%;
+    top:85%;
   }
 
   .bodyIcon.handAndWristOption{
-    left:33%;
-    top:39%;
+    left:29%;
+    top:40%;
   }
 
   .bodyIcon.hipOption{
     left:53%;
-    top:36%;
+    top:37%;
   }
 
   .bodyIcon.kneeOption{
@@ -283,13 +282,13 @@
   }
 
   .bodyIcon.neckOption{
-    left:48%;
-    top: 1%;
+    left:49%;
+    top: 7%;
   }
 
   .bodyIcon.shoulderOption{
     left:39%;
-    top: 1%;
+    top: 7%;
   }
 
   .active-icon{
@@ -375,7 +374,7 @@
     
   }*/
 
-  @media screen and (max-width: 480px) { /*cell*/
+  @media screen and (max-width: 480px) { 
     .symptom-checker-container {
       display: flex;
       max-width: auto;
@@ -388,8 +387,10 @@
     #symptoms-model{
       min-height: 60%;
       width: 100%;
+      background-size: 210% 100%;
 
     }
+    
     .symptoms-box{
      /* margin-left:200px;
       margin-right: 200px;
@@ -457,42 +458,42 @@
 
     .bodyIcon.backOption{
       left: 46%;
-      top: 29%;
+      top: 25%;
     }
 
     .bodyIcon.elbowOption{
-      left: 78%;
-      top: 38%;
+      left: 76%;
+      top: 33%;
     }
 
     .bodyIcon.footAndAnkleOption {
       left: 35%;
-      top: 77%;
+      top: 85%;
     }
 
     .bodyIcon.handAndWristOption {
-      left: 12%;
-      top: 43%;
+      left: 8%;
+      top: 42%;
     }
 
     .bodyIcon.hipOption {
-      left: 57%;
-      top: 40%;
+      left: 55%;
+      top: 37%;
     }
 
     .bodyIcon.kneeOption {
-      left: 59%;
-      top: 58%;
+      left: 58%;
+      top: 61%;
     }
 
     .bodyIcon.neckOption {
       left: 46%;
-      top: 10%;
+      top: 7%;
     }
 
     .bodyIcon.shoulderOption{
       left: 26%;
-      top: 11%;
+      top: 7%;
     }
 
     
