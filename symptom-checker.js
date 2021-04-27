@@ -3,7 +3,7 @@ function buttonClickHandlerBodyPart(e) {
     if(document.getElementsByClassName("symptom-description"+' active-description')[0]){
       document.getElementsByClassName("symptom-description"+' active-description')[0].setAttribute("hidden","");
     }
-    //active new element
+    //new active element
     document.getElementsByClassName('icon-trigger-points')[0].removeAttribute("hidden");
     document.getElementsByClassName("active-condition")[0].classList.remove('active-condition');
     document.getElementsByClassName("list-of-symptoms "+e.id)[0].className+= ' active-condition';
