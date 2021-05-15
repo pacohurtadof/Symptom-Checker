@@ -1,3 +1,3 @@
-# Mono HTML
+# Symptom Checker
 
 For updates check "main" branch.
