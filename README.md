@@ -1,3 +1,3 @@
 # Symptom Checker
 
-For updates check "main" branch.
+A symptom checker interface using only HTML and CSS
